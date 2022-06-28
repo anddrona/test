@@ -1,0 +1,417 @@
+body {
+  margin: 0;
+  color: #333333;
+  background: white;
+  position: relative;
+}
+
+@font-face {
+  font-family: 'Rubik700';
+  src: url("../fonts/Rubik-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Rubik400';
+  src: url("../fonts/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'circe400';
+  src: url("../fonts/circe-light.ttf");
+}
+@font-face {
+  font-family: 'circe700';
+  src: url("../fonts/circe.ttf");
+}
+
+
+.container {
+  max-width: 1120px;
+  padding-top: 152px;
+  margin: 0 auto;
+  padding-bottom: 75px;
+
+
+
+  .container__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:nth-child(4) {
+      align-items: flex-end;
+      margin-top: 48px;
+    }
+
+    .container__items__block-points {
+      margin: 0 auto;
+      position: relative;
+
+      .container__items__block-points__points {
+        border-left: dashed 1px black;
+        height: 248px;
+        margin: 0 auto;
+      }
+
+      .container__items__block-points__circle {
+        width: 20px;
+        height: 20px;
+        background: #FF7B9A;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: -10px;
+
+      }
+
+      :nth-child(2) {
+        top: 45%;
+        left: -10px;
+      }
+
+      :nth-child(3) {
+        top: 92%;
+        left: -10px;
+      }
+
+    }
+
+    .container__items__block-photo__photo {
+      max-width: 560px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .container__items__year-block {
+      max-width: 530px;
+      position: relative;
+
+      .container__items__year-block__trigon {
+        width: 184px;
+        height: 184px;
+        position: absolute;
+        top: -19px;
+        left: 10px;
+        z-index: -20;
+      }
+
+      .container__items__year-block_big-yellow-circle {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: 5px;
+        left: 43px;
+        z-index: -20;
+      }
+    }
+
+    :first-child {
+      .container__items__year-block__year-text {
+        margin-top: 29px;
+        max-width: 450px;
+        margin-bottom: 20px;
+      }
+    }
+
+    :nth-child(2) {
+      .container__items__year-block__year-text {
+        margin-top: 13px;
+        max-width: 430px;
+      }
+    }
+
+
+    .container__items__block-photoBg {
+      background: url("../images/bg.jpg") center center;
+      background-size: cover;
+      width: 560px;
+      height: 319px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      .container__items__block-photoBg__logo svg {
+        position: absolute;
+        right: -80px;
+        top: -139px;
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        transform: rotate(20deg);
+
+      }
+
+      .container__items__block-photoBg__year-block {
+        color: white;
+        margin-right: 36px;
+      }
+
+      .container__items__block-photoBg__year-block .text-year {
+        max-width: 360px;
+        margin-top: 32px;
+        margin-left: 100px;
+      }
+    }
+
+    .container__items__description-photoBg {
+      position: relative;
+
+      .container__items__description-text__fon {
+        background: #A5E5F4;
+        width: 714px;
+        height: 298px;
+        position: absolute;
+        top: -69px;
+        left: -39px;
+        z-index: -10;
+      }
+
+      .container__items__description-text {
+        width: 521px;
+        font-size: 16px;
+        line-height: 34px;
+        font-family: Rubic400, sans-serif;
+        margin-bottom: 45px;
+
+      }
+
+      .container__items__description__awards-block {
+        display: flex;
+        align-items: center;
+        margin-left: -31px;
+
+        .awards-block-img {
+          width: 63px;
+
+          img {
+            width: 100%;
+          }
+
+          &:nth-child(2) {
+            margin: 0 6px;
+          }
+        }
+
+        .container__items__description__awards-block__block-Lorem {
+          font-size: 15px;
+          color: #333333;
+          font-family: Rubik700, sans-serif;
+          border-bottom: 1px solid black;
+          padding-bottom: 3px;
+          position: relative;
+          margin-top: 17px;
+
+          .container__items__description__awards-block__block-Lorem__small-ellipse {
+            position: absolute;
+            top: -8px;
+            left: -16px;
+            width: 35px;
+            height: 35px;
+            z-index: -20;
+          }
+        }
+
+        .line {
+          border-bottom: dashed 1px black;
+          width: 260px;
+          margin: 23px 37px 0 20px;
+        }
+
+      }
+    }
+
+  }
+
+  .container__block-cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 116px;
+    margin-left: -9px;
+    margin-right: -9px;
+
+
+    .container__block-cards__items {
+      //width: 270px;
+      width: 265px;
+      height: 265px;
+      background: #FFFFFF;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 25px;
+      padding: 14px 27px 20px 19px;
+      margin: 8px 9px;
+      box-sizing: border-box;
+
+
+
+
+      &:hover{
+        cursor: pointer;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        background: #FFE267;
+
+
+
+        .container__block-cards__items__logo{
+          .logo-after-click{
+            display: block;
+          }
+          .logo-before-click{
+            display: none;
+            width: 107px;
+            height: 151px;
+          }
+        }
+      }
+
+
+      .container__block-cards__items__logo {
+        svg {
+          width: 107px;
+          height: 151px;
+        }
+      }
+      .container__block-cards__items__text{
+        font-size: 22px;
+         display: flex;
+        align-items: center;
+        color: #3E3E3F;
+        font-family: circe700,sans-serif;
+        font-weight: 600;
+        margin-top: 25px;
+        width: 189px;
+        max-height: 20px;
+        outline: 0;
+
+      }
+
+    }
+
+  }
+
+.logo-after-click{
+  display: none;
+}
+
+}
+
+.container .container__block-cards .container__block-cards__items:nth-child(1) {
+  width: 567px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .grid-gradient{
+    width: 150px;
+    height: 150px;
+    margin-right: 57px;
+    margin-top: 20px;
+    #pattern-bg{
+      background: linear-gradient(138.55deg, #C3C6D0 -5.84%, rgba(195, 198, 208, 0) 112.9%);
+    }
+  }
+  .container__block-cards__items__logo{
+    margin-left: 12px;
+  }
+}
+.container .container__block-cards .container__block-cards__items:nth-child(5) {
+  width: auto;
+  .container__block-cards__items__text{
+    width: 240px;
+  }
+}
+.container .container__block-cards .container__block-cards__items:nth-child(6) {
+  .container__block-cards__items__text{
+    width: 177px;
+  }
+}
+.container .container__block-cards .container__block-cards__items:nth-child(4) {
+  .container__block-cards__items__text{
+    width: 200px;
+  }
+}
+.container .container__block-cards .container__block-cards__items:nth-child(7) {
+  padding-top: 32px;
+  background: #FFE267;
+  width: 250px;
+  .container__block-cards__items__text{
+    margin-top: 134px;
+    font-family: circe400,sans-serif;
+  }
+}
+:nth-child(3) .container__items__block-photo__year-block .container__items__block-photo__year-block__year-text.text-year {
+  margin-left: 106px;
+}
+
+:nth-child(3) .container__items__block-photo__year-block .container__items__block-photo__year-block__year-text {
+  max-width: 316px;
+  margin-top: 13px;
+}
+
+.container__items__block-photo__year-block {
+  position: relative;
+
+  .container__items__block-photo__year-block__figure {
+    .figure-for-phone{
+      bottom: -63px;
+      left: 525px;
+
+    }
+    position: absolute;
+    z-index: -30;
+    bottom: -200px;
+    left: -181px;
+  }
+}
+
+.skip{
+  width: 100%;
+}
+.year {
+  font-size: 64px;
+  line-height: 34px;
+  font-family: Rubik700, sans-serif;
+
+  span {
+    font-size: 24px;
+    margin-left: 9px;
+  }
+}
+
+.text-year {
+  font-size: 16px;
+  line-height: 34px;
+  font-family: Rubik400, sans-serif;
+  margin-left: 82px;
+}
+.bg-container{
+  position: relative;
+.bg-main{
+  position: absolute;
+  bottom: 120px;
+  right: 0;
+  width: 100%;
+  height: 474px;
+  background: #F4F4F4;
+  z-index: -56;
+  transform: skewY(-8deg);
+  background-size:100% 100% ;
+}
+  .bg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 300px;
+    background: #F4F4F4;
+    z-index: -56;
+    background-size:100% 100% ;
+  }
+}
+.figure-for-phone{
+  display: none;
+}
